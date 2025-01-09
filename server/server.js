@@ -13,7 +13,7 @@ app.use(express.json()); // Universal middleware
 // MongoDB Connection
 const mongoURI =
   process.env.MONGO_URI ||
-  "mongodb+srv://admin123:ZpneIdCCSdcvCNsu@cluster0.fsw8q.mongodb.net/recipe-recommender?retryWrites=true&w=majority";
+  "MONGODB_URI";
 mongoose
   .connect(mongoURI)
   .then(() => console.log("Connected to MongoDB Atlas"))
